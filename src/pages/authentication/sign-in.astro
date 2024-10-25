@@ -1,0 +1,20 @@
+---
+import LayoutStacked from '../../app/LayoutStacked.astro';
+import FormSignIn from '../../modules/FormSignIn.astro';
+---
+
+<LayoutStacked>
+	<div class="min-h-screen align-middle flex pb-[12vh]">
+		<FormSignIn />
+	</div>
+</LayoutStacked>
+<!-- your-page.astro -->
+---
+---
+<button id="error-button">Throw test error</button>
+<script>
+  function handleClick () {
+    throw new Error('This is a test error');
+  }
+  document.querySelector("#error-button").addEventListener("click", handleClick);
+</script>
