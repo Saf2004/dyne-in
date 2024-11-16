@@ -37,11 +37,10 @@
 	},
 	"dependencies": {
 		"@astrojs/sitemap": "^1.1.0",
-		"@astrojs/tailwind": "^5.1.2",
+		"@astrojs/tailwind": "^3.0.1",
 		"@faker-js/faker": "^7.6.0",
-		"@sentry/astro": "^8.35.0",
 		"apexcharts": "^3.37.2",
-		"astro": "^4.16.7",
+		"astro": "^2.0.4",
 		"flowbite": "^2.1.1",
 		"flowbite-typography": "^1.0.3",
 		"shiki": "^0.14.1",

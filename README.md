@@ -2,8 +2,8 @@
 
 <!-- NOTE: This is a Tailwind in MD experiment, to make it nice when rendered with Astro -->
 <div align="center" class="flex flex-wrap justify-evenly w-full">
-	<a href="https://github.com/themesberg/flowbite-astro-admin-dashboard"><img src="https://img.shields.io/badge/version-v1.0.2-blue" alt="version"></a>
-	<a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="license"></a>
+	<a href="https://github.com/themesberg/flowbite-astro-admin-dashboard"><img src="https://img.shields.io/badge/version-v1.0.2-primary" alt="version"></a>
+	<a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-primary.svg" alt="license"></a>
 	<a href="https://github.com/themesberg/flowbite-admin-dashboard/issues?q=is%3Aopen+is%3Aissue"><img src="https://img.shields.io/github/issues/themesberg/flowbite-astro-admin-dashboard.svg" alt="GitHub issues open"></a>
 	<a href="https://github.com/themesberg/flowbite-admin-dashboard/issues?q=is%3Aissue+is%3Aclosed"><img src="https://img.shields.io/github/issues-closed-raw/themesberg/flowbite-astro-admin-dashboard.svg" alt="GitHub issues closed"></a>
 </div>
@@ -295,4 +295,3 @@ If you have questions or need help integrating the product please [contact us](h
 - [Julian Cataldo](https://twitter.com/Julian_Cataldo)
 - [Zoltán Szőgyényi](https://twitter.com/zoltanszogyenyi)
 - [Robert Tanislav](https://twitter.com/roberttanislav)
-# dyne-in

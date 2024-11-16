@@ -1,0 +1,36 @@
+---
+import type {ImageMetadata} from 'astro';
+import {Image} from 'astro:assets';
+
+interface Props {
+	imagePath: string;
+	altText: string;
+	CategoryName: string;
+	Description: number;
+}
+
+
+const {imagePath, altText, CategoryName, Description} = Astro.props;
+const images = import.meta.glob<{ default: ImageMetadata }>('/src/assets/*.{jpeg,jpg,png,gif,webp}')
+console.log(images)
+if (!images[imagePath]) throw new Error(`"${imagePath}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif}"`);
+---
+<div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+	<a href="#">
+		<Image class="rounded-t-lg" src={images[imagePath]()} alt={altText}/>
+	</a>
+	<div class="p-5">
+		<a href="#">
+			<h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{CategoryName}</h5>
+		</a>
+		<p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{Description}</p>
+		<a href="#"
+			 class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-teal-300 to-lime-300 group-hover:from-teal-300 group-hover:to-lime-300 dark:text-white dark:hover:text-gray-900 focus:ring-4 focus:outline-none focus:ring-lime-200 dark:focus:ring-lime-800">
+          <span
+						class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">  
+					Order Now
+					</span>
+			
+		</a>
+	</div>
+</div>
